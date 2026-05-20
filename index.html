@@ -255,6 +255,11 @@
       .section-title { font-size: clamp(26px, 8vw, 36px); }
       .hero-grid, .mini-grid, .cards-3, .cards-4, .cards-labs, .steps { grid-template-columns: 1fr; }
       .hero { padding-top: 54px; }
+
+      footer img {
+        max-height: 74px;
+      }
+
     }
   </style>
 </head>
@@ -264,7 +269,6 @@
     <div class="container hero-grid">
       <div>
         <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:12px;">
-          <img src="images/logo-usacli.png" alt="US ACLI" style="height:36px; opacity:0.9;">
           <span class="eyebrow">US ACLI Bologna ASD APS · Scuola Primaria Carducci</span>
         </div>
         <h1>Doposcuola Carducci Bologna<br>Un aiuto concreto per i genitori, un pomeriggio educativo per i bambini</h1>
@@ -520,40 +524,44 @@
   </section>
 
 
-  <section style="padding:34px 0 18px; background:#ffffff;">
-    <div class="container" style="text-align:center;">
-      <img src="images/logo-doposcuola.png" alt="Doposcuola Sportivo ACLI Bologna" style="max-width:260px; width:70%; height:auto; border-radius:18px; box-shadow: var(--shadow);">
-    </div>
-  </section>
-
-  
 <footer style="padding:40px 0; text-align:center; background:#ffffff; border-top:1px solid #e6edf6;">
 
   <div style="
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:28px;
+    gap:26px;
     flex-wrap:wrap;
     margin-bottom:18px;
   ">
 
     <img 
-      src="images/logo-doposcuola.png" 
-      alt="Doposcuola Sportivo ACLI Bologna"
+      src="images/logo-acli.png" 
+      alt="ACLI Bologna"
       style="
-        height:95px;
+        height:86px;
         width:auto;
-        border-radius:14px;
+        object-fit:contain;
       "
     >
 
     <img 
-      src="images/logo-acli.png" 
-      alt="ACLI Bologna"
+      src="images/logo-usacli.png" 
+      alt="US ACLI Bologna"
       style="
-        height:95px;
+        height:86px;
         width:auto;
+        object-fit:contain;
+      "
+    >
+
+    <img 
+      src="images/logo-doposcuola.png" 
+      alt="Doposcuola Sportivo ACLI Bologna"
+      style="
+        height:86px;
+        width:auto;
+        object-fit:contain;
       "
     >
 
@@ -575,6 +583,8 @@
   </div>
 
 </footer>
+
+
 
 
 </body>
