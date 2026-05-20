@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doposcuola Carducci | US ACLI Bologna ASD APS</title>
+  <meta name="description" content="Doposcuola Carducci Bologna per la scuola primaria: aiuto compiti, laboratori artistici, sportivi, linguistici, musicali e attività educative pomeridiane." />
+  <meta name="keywords" content="doposcuola Bologna, doposcuola Carducci Bologna, aiuto compiti Bologna, laboratori bambini Bologna, doposcuola scuola primaria Bologna, IC20 Bologna" />
+  <meta name="author" content="US ACLI Bologna ASD APS" />
+
+  <title>Doposcuola Carducci Bologna | Laboratori e aiuto compiti scuola primaria</title>
   <style>
     :root {
       --blue: #1e4e8c;
@@ -127,6 +131,7 @@
     .cards-3, .cards-4 { display: grid; gap: 22px; }
     .cards-3 { grid-template-columns: repeat(3, 1fr); }
     .cards-4 { grid-template-columns: repeat(4, 1fr); }
+    .cards-labs { grid-template-columns: repeat(3, 1fr); }
     .card {
       background: var(--white);
       border-radius: var(--radius);
@@ -248,7 +253,7 @@
       h1 { font-size: clamp(30px, 9vw, 42px); }
       .hero p, .section-subtitle, .contact-box p { font-size: 17px; }
       .section-title { font-size: clamp(26px, 8vw, 36px); }
-      .hero-grid, .mini-grid, .cards-3, .cards-4, .steps { grid-template-columns: 1fr; }
+      .hero-grid, .mini-grid, .cards-3, .cards-4, .cards-labs, .steps { grid-template-columns: 1fr; }
       .hero { padding-top: 54px; }
     }
   </style>
@@ -262,16 +267,13 @@
           <img src="images/logo-usacli.png" alt="US ACLI" style="height:36px; opacity:0.9;">
           <span class="eyebrow">US ACLI Bologna ASD APS · Scuola Primaria Carducci</span>
         </div>
-        <div style="margin:-2px 0 14px; font-size:15px; color:rgba(255,255,255,0.88); font-weight:600;">
-          Servizio educativo pomeridiano per la scuola primaria
-        </div>
         <h1>Doposcuola Carducci Bologna<br>Un aiuto concreto per i genitori, un pomeriggio educativo per i bambini</h1>
         <p>
           Un servizio costruito in dialogo con le famiglie: ascoltiamo i genitori, ci confrontiamo con loro e accompagniamo i bambini in un pomeriggio fatto di compiti, relazioni e laboratori coinvolgenti.
         </p>
         <div class="hero-buttons">
           <a class="btn btn-primary" href="#iscrizione">Richiedi informazioni</a>
-          <a class="btn btn-secondary" href="#laboratori">Orari e laboratori</a>
+          <a class="btn btn-secondary" href="#laboratori">Scopri i laboratori</a>
         </div>
       </div>
 
@@ -366,7 +368,7 @@
       </div>
 
       <div style="margin-top:16px; background:#f4e0a5; color:#1d2430; padding:14px 18px; border-radius:14px; font-weight:700; text-align:center; box-shadow: var(--shadow);">
-        Il doposcuola base si svolge dalle 14:30 alle 16:30. I laboratori sono un'estensione facoltativa del pomeriggio, dalle 16:30 alle 17:30.
+        Il doposcuola base si svolge dalle 14:30 alle 16:30. I laboratori sono un'estensione facoltativa del pomeriggio, dalle 16:30 alle 17:30. Solo il mercoledì, le classi 4ª e 5ª iniziano alle 15:00 a causa del diverso orario didattico. Solo il mercoledì, le classi 4ª e 5ª iniziano alle 15:00 a causa del diverso orario didattico.
       </div>
     </div>
   </section>
@@ -408,43 +410,63 @@
         ma un'occasione per scoprire inclinazioni, allenare abilità e tornare a casa con qualcosa in più.
       </p>
 
-      <div class="cards-4">
+      <div class="cards-4 cards-labs">
+
         <div class="card">
-          <img class="image-cover" src="images/artistico.jpg" alt="Laboratorio artistico" />
+          <img class="image-cover" src="images/artistico.jpg" alt="Atelier dei Colori" />
           <div class="card-body">
             <span class="lab-badge">Lunedì</span>
-            <h3>Laboratorio Artistico</h3>
-            <p>Uno spazio per esprimersi, sperimentare tecniche, sviluppare fantasia e manualità attraverso attività creative coinvolgenti.</p>
+            <h3>Atelier dei Colori</h3>
+            <p>Attività artistiche e creative per sviluppare fantasia, manualità ed espressione personale attraverso tecniche, materiali e piccoli progetti coinvolgenti.</p>
           </div>
         </div>
 
         <div class="card">
-          <img class="image-cover" src="images/linguistico.jpg" alt="Laboratorio linguistico" />
+          <img class="image-cover" src="images/matematica.jpg" alt="Numeri in gioco" />
           <div class="card-body">
             <span class="lab-badge">Lunedì</span>
-            <h3>Laboratorio Linguistico</h3>
-            <p>Un'attività dinamica per avvicinare i bambini alle lingue in modo naturale, partecipato e adatto alla loro età.</p>
+            <h3>Numeri in gioco</h3>
+            <p>Un laboratorio di matematica e logica pensato per allenare ragionamento, intuizione, problem solving e sicurezza davanti alle sfide matematiche.</p>
           </div>
         </div>
 
         <div class="card">
-          <img class="image-cover" src="images/scacchi.jpg" alt="Laboratorio scacchi" />
+          <img class="image-cover" src="images/scacchi.jpg" alt="Scacco Matto Lab" />
           <div class="card-body">
             <span class="lab-badge">Mercoledì</span>
-            <h3>Laboratorio di Scacchi</h3>
-            <p>Per allenare concentrazione, logica, pazienza e capacità di previsione. Una palestra mentale travestita da gioco.</p>
+            <h3>Scacco Matto Lab</h3>
+            <p>Il laboratorio di scacchi che aiuta i bambini ad allenare concentrazione, strategia, pazienza e capacità di previsione attraverso il gioco.</p>
           </div>
         </div>
 
         <div class="card">
-          <img class="image-cover" src="images/sportivo.jpg" alt="Laboratorio sportivo" />
+          <img class="image-cover" src="images/linguistico.jpg" alt="Passaporto per il Mondo" />
           <div class="card-body">
-            <span class="lab-badge">Venerdì</span>
-            <h3>Laboratorio Sportivo</h3>
-            <p>Movimento, gioco di squadra, coordinazione e divertimento: perché stare bene passa anche dal corpo, non solo dai quaderni.</p>
+            <span class="lab-badge">Mercoledì</span>
+            <h3>Passaporto per il Mondo</h3>
+            <p>Un laboratorio linguistico per avvicinare i bambini a spagnolo e francese in modo naturale, dinamico e adatto alla loro età.</p>
           </div>
         </div>
-      </div>
+
+        <div class="card">
+          <img class="image-cover" src="images/sportivo.jpg" alt="Mini Champions" />
+          <div class="card-body">
+            <span class="lab-badge">Venerdì</span>
+            <h3>Mini Champions</h3>
+            <p>Attività sportive in palestra con giochi di squadra, movimento e coordinazione per imparare a stare bene insieme divertendosi.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="image-cover" src="images/musicale.jpg" alt="La fabbrica dei suoni" />
+          <div class="card-body">
+            <span class="lab-badge">Venerdì</span>
+            <h3>La fabbrica dei suoni</h3>
+            <p>Un laboratorio musicale dedicato a ritmo, voce, ascolto ed espressione, attraverso attività coinvolgenti legate al canto e alla musica.</p>
+          </div>
+        </div>
+
+      </div></div>
     </div>
   </section>
 
@@ -452,7 +474,8 @@
     <div class="container">
       <h2 class="section-title">Come iscriversi</h2>
       <p class="section-subtitle">
-        Per chiedere informazioni o avviare l'iscrizione basta inviare una email. Sarete ricontattati con tutte le indicazioni necessarie in modo chiaro e semplice.
+        Niente labirinti, niente fumo. Per chiedere informazioni o avviare l'iscrizione basta inviare una email.
+        Sarete ricontattati con tutte le indicazioni necessarie.
       </p>
 
       <div class="steps">
@@ -477,33 +500,6 @@
     </div>
   </section>
 
-  <section class="soft-bg">
-    <div class="container">
-      <h2 class="section-title">Domande frequenti</h2>
-      <p class="section-subtitle">
-        Le informazioni essenziali, raccolte in modo semplice.
-      </p>
-
-      <div class="steps" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="step">
-          <h4>Il laboratorio è obbligatorio?</h4>
-          <p>No. Il doposcuola base si svolge dalle 14:30 alle 16:30. I laboratori sono un'estensione facoltativa del pomeriggio, dalle 16:30 alle 17:30 nei giorni previsti.</p>
-        </div>
-
-        <div class="step">
-          <h4>Come si chiedono informazioni?</h4>
-          <p>Basta inviare una email indicando nome del bambino, classe frequentata, recapito telefonico e l'eventuale interesse per doposcuola e laboratori.</p>
-        </div>
-
-        <div class="step">
-          <h4>È possibile parlare con gli educatori?</h4>
-          <p>Sì. Al momento del ritiro i genitori possono confrontarsi direttamente con gli educatori per chiarimenti e aggiornamenti sul percorso dei bambini.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
   <section id="iscrizione">
     <div class="container">
       <div class="contact-box">
@@ -517,7 +513,7 @@
           <a class="btn btn-primary" href="mailto:asdusacli.bo.scuola@gmail.com?subject=Informazioni%20Doposcuola%20Carducci">Invia email ora</a>
         </div>
         <div class="footer-note">
-          Nella mail potete indicare: nome del bambino, classe frequentata, numero di telefono e interesse per uno o più laboratori. Vi risponderemo con le informazioni necessarie per orientarvi in modo semplice e chiaro.
+          Nella mail potete indicare: nome del bambino, classe frequentata, numero di telefono e interesse per uno o più laboratori.
         </div>
       </div>
     </div>
@@ -525,6 +521,9 @@
 
   <footer style="padding:40px 0; text-align:center; background:#ffffff; border-top:1px solid #e6edf6;">
     <img src="images/logo-acli.png" alt="ACLI Bologna" style="height:80px; margin-bottom:10px;">
+    <div style="margin-top:10px; font-size:14px; color:#5f6f81;">
+      <a href="privacy.html" style="color:#1e4e8c; font-weight:700;">Privacy Policy</a>
+    </div>
   </footer>
 
 </body>
